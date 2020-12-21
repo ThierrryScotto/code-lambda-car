@@ -1,0 +1,17 @@
+{
+  "name": "code-lambda-car",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "sls offline"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.8",
+    "serverless-offline": "^6.8.0"
+  }
+}
