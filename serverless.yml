@@ -21,7 +21,7 @@ functions:
       - http:
           path: cars
           method: POST
-          cors: true
+          cors: false
           private: false
 
   editCar:
@@ -34,7 +34,7 @@ functions:
       - http:
           path: cars/{carId}
           method: PATCH
-          cors: true
+          cors: false
           private: false
 
   DeleteCar:
@@ -47,7 +47,7 @@ functions:
       - http:
           path: cars/{carId}
           method: DELETE
-          cors: true
+          cors: false
           private: false
 
   getCar:
@@ -60,7 +60,7 @@ functions:
       - http:
           path: cars/{carId}
           method: GET
-          cors: true
+          cors: false
           private: false
 
   getAllCars:
@@ -73,5 +73,5 @@ functions:
       - http:
           path: cars
           method: GET
-          cors: true
+          cors: false
           private: false

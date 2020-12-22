@@ -61,7 +61,7 @@ async function editCar(event) {
   const body  = _validateEditBody(JSON.parse(event.body));
   const carId = event.pathParameters.carId;
 
-  const car = await Cars.findById({ _id: carId });
+  const car = await Cars.findById({ _id: carId }).where('status').equals('1');
   if (!car) {
     return {
       statusCode: 404,
